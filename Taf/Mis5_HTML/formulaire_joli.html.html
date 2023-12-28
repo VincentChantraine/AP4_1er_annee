@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulaire v2</title>
+    </head>
+
+    <body>
+        
+        <h2 style='color:darkblue;'><center>Services Informatiques aux Organisations </h2>
+        <hr size="3" color="chartreuse">
+        <h3><center style='color:blue;'>Les formulaires</center></h3>
+        <hr size="3" color="chartreuse">
+        
+        <form action="/page-traitement-donnees" method="post">
+
+            <div>
+                <label for="nom">Votre nom</label>
+                <center><input type="text" id="nom" name="nom" required >
+            </div>
+        
+            <div>  
+                <label for="prenom">Votre prenom </label>
+                <center><input type="text" id="prenom" name="prenom" required>
+            </div>
+            
+            <div> 
+                <p>Cochez les matieres que vous aimez</p>
+            </div>  
+            
+            <div align = center>  
+                <input type="checkbox" name="informatique" value="informatique">Informatique<br> 
+                <input type="checkbox" name="français" value="français">Français<br> 
+                <input type="checkbox" name="mathematiques" value="mathematiques">Mathematiques<br> 
+                <input type="checkbox" name="anglais" value="anglais">Anglais 
+            </div>
+            
+            <div>  
+                <p>Quelle option avez-vous choisie ?</p>
+            </div>
+            
+            <div align = center>   
+                <input type="radio" name="option" value="SLAM">SLAM<br> 
+                <input type="radio" name="option" value="SISR">SISR 
+            </div>
+            
+            <div>   
+                <label for="sujet">Quelle est votre seconde langue ?</label>
+            </div>
+            
+            <div align = center>   
+                <select name="sujet" id="sujet" required>
+                    <option value="" disabled selected hidden>Espagnol</option>
+                    <option value="Espagnol">Espagnol</option>
+                    <option value="Allemand">Allemand</option>
+                    <option value="Aucune">Aucune</option>
+                </select>
+            </div>
+            
+            <div><br>
+                <label for="message">Vos observations</label>
+            </div>
+            
+            <div> 
+                <textarea id="message" name="message" rows="6" cols="50" placeholder="Votre avis nous interesse...." required></textarea>
+            </div> 
+              
+            <div align = center><br>
+                <button type="submit">Annuler </button>
+                <button type="submit">Envoyer </button>
+            </div>
+
+        </form>
+    </body>
+</html>

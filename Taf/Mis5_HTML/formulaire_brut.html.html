@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulaire v1</title>
+    </head>
+
+    <body>
+        
+        <h2 style='color:darkblue;'><center>Services Informatiques aux Organisations </h2>
+        <hr size="3" color="chartreuse">
+        <h3><center style='color:blue;'>Les formulaires</center></h3>
+        <hr size="3" color="chartreuse"><br>
+            
+        <form action="/page-traitement-donnees" method="post">
+                
+            <label for="nom">Votre nom  : </label>
+            <input type="text" id="nom" name="nom" required><br>
+            <label for="prenom">Votre prenom : </label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <p>Cochez les matieres que vous aimez :</p>
+                <input type="checkbox" name="informatique" value="informatique">Informatique<br> 
+                <input type="checkbox" name="francais" value="francais">Francais<br> 
+                <input type="checkbox" name="mathematiques" value="mathematiques">Mathematiques<br> 
+                <input type="checkbox" name="anglais" value="anglais">Anglais 
+
+            <p>Quelle option avez-vous choisie :</p>
+                <input type="radio" name="option" value="SLAM">SLAM<br> 
+                <input type="radio" name="option" value="SISR">SISR<br><br>
+
+            <label for="sujet">Quelle est votre seconde langue :</label><br>
+                
+            <select name="sujet" id="sujet" required>
+                <option value="" disabled selected hidden>Espagnol</option>
+                <option value="Espagnol">Espagnol</option>
+                <option value="Allemand">Allemand</option>
+                <option value="Aucune">Aucune</option>
+            </select>
+
+            <p>
+                <label for="message">Vos observations : </label><br>
+                <textarea id="message" name="message" placeholder="Votres avis nous interesse...." required></textarea>
+            </p>
+
+        </form>
+    </body>
+</html>
